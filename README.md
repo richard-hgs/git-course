@@ -30,8 +30,10 @@
 
 - Repository status in current moment:
 
-  ``git status``<br/>
-  ``git status -uall``<br/>
+  ``git status``
+
+  ``git status -uall``
+
   E.g: -uall Show the hierarchy of dirs and subdirs to be added, updated or removed.
 
 
@@ -102,11 +104,21 @@
 - List branches:
 
   ``git branch``
-
+- 
 
 - Change current branch:
 
   ``git branch -M main``
+
+
+- Delete branch:
+
+  ``git branch -d branch-name``
+
+
+- Delete remote branch:
+
+  ``git branch -rd branch-name``
 
 
 - List git remote repos name | url:
@@ -119,13 +131,20 @@
   ``git remote --add origin https://github.com/user-name/repo-name.git``
 
 
-- Sync local repository (Rollback / Forward) changes to a specific commit(using commit hash) in git log:
+- Switch branch to (Rollback / Forward) changes to a specific commit(using commit hash) in git log:
 
   ``git checkout b451asd``
 
-- Checkout changes in a new branch:
+
+- Switch to a new branch and create it:
 
   ``git checkout -b main``
+
+
+- Switch to a existing branch:
+
+  ``git checkout -b main``
+
 
 - Save old commits in a new branch before Overwriting:
 
