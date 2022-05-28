@@ -6,19 +6,19 @@
 - Creates a online repository:
 
   ``gh repo create``<br/>
-  - E.g: 
+  - **E.g:**
     - 1º: Create a new repository on Github from scratch
     - 2º: Push an existing local repository to GitHub
       - Path to local repository (default is "." current path)
       - Repository name (default is FolderName)
-      - Visibility:
-        - Public: Accessible to everyone in internet
-        - Private: Only accessible to you, people you explicitly share access with and or Organization repositories, certain organization members
-        - Internal: Internal repositories are accessible to all enterprise members
-      - Add a remote: (yes=Add a new remote connection config to current git project, no=Don't add remote connection config)
+      - **Visibility:**
+        - **Public:** Accessible to everyone in internet
+        - **Private:** Only accessible to you, people you explicitly share access with and or Organization repositories, certain organization members
+        - **Internal:** Internal repositories are accessible to all enterprise members
+      - **Add a remote:** (**y**=Add a new remote connection config to current git project, **n**=Don't add remote connection config)
       - What should the new remote be called (default is origin)
-      - Would you like to push commits from the current branch to "origin"? (y=Push commits to previously configured remote, n=Don't push commits)
-      
+      - Would you like to push commits from the current branch to "origin"? (**y**=Push commits to previously configured remote, **n**=Don't push commits)
+
 ### GIT Commands:
 
 <img alt="git_logo" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" width="100" height="100">
@@ -49,7 +49,7 @@
   ``git rm --cached file.txt|folder``
 
   E.g: --cached Remove from repository
-       without --cached delete from repository and from pc
+  without --cached delete from repository and from pc
 
 
 - Salvar alterações (Commit):
@@ -99,11 +99,15 @@
 
   ``.gitignore``
 
-  
+- List branches:
+
+  ``git branch``
+
+
 - Change current branch:
 
   ``git branch -M main``
-  
+
 
 - List git remote repos name | url:
 
@@ -115,11 +119,19 @@
   ``git remote --add origin https://github.com/user-name/repo-name.git``
 
 
+- Sync local repository (Rollback / Forward) changes to a specific commit(using commit hash) in git log:
+
+  ``git checkout b451asd``
+
+- Checkout changes in a new branch:
+
+  ``git checkout -b main``
+
 - Save old commits in a new branch before Overwriting:
 
-  ``git checkout master``
+  ``git checkout main``
 
-  ``git branch ``
+  ``git branch my-brach-name``
 
 
 - Overwrite local changes using repo changes:
@@ -127,3 +139,15 @@
   ``git fetch --all``
 
   ``git reset --hard <remote>/<branch>``
+
+
+- If some error happens create a temporary branch commit changes in it
+  then get changes from main and merge this two branches
+
+  ``git branch temp-branch``
+
+  ``git checkout main``
+
+  ``git merge temp-branch``
+
+  ``git push origin master``
