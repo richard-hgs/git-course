@@ -176,15 +176,18 @@
 - After pulling the changes when a conflict occurs the conflict is shown in the files
 in this format:
 
-  ``
-        <span>
-        print("Ola mundo")
-        <<<<<<< HEAD
-        print("My new line")
-        =======
-        print("Nova linha")
-        8050fd126537c51cd5288e5b40dfcd2aa66528e4 
-<span>
-        ``
+  ```
+  print("Ola mundo")
+  <<<<<<< HEAD
+  print("My new line")
+  =======
+  print("Nova linha")
+  >>>>>>> 8050fd126537c51cd5288e5b40dfcd2aa66528e4
+  ```
+  ```
+  - From line <<<<< HEAD until line ====== Are your version changes in the file.
+  - From line ===== until >>>>>>> 8050fd126537c51cd5288e5b40dfcd2aa66528e4 are the other
+  commit that is conflicting at same lines in your commit files.
+  ```
   - Fix the issue in the file by deleting the changes you don't want
 and keeping the changes you want then git commit -m ""
