@@ -190,4 +190,8 @@ in this format:
   commit that is conflicting at same lines in your commit files.
   ```
   - Fix the issue in the file by deleting the changes you don't want
-and keeping the changes you want then git commit -m ""
+and keeping the changes you want then run the commands:
+  
+  ``git commit -m "Commit description"``
+
+  ``git push``
