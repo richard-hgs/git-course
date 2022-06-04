@@ -1,4 +1,4 @@
-## CURSO GIT
+## GIT COURSE
 
 ### GitHub Commands:
 <img alt="github_logo" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" width="100" height="100">
