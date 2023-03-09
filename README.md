@@ -104,7 +104,11 @@
 - List branches:
 
   ``git branch``
-- 
+
+- Create a new branch as a copy of current branch:
+
+  ``git switch -c new-branch``
+
 
 - Change current branch:
 
@@ -119,6 +123,15 @@
 - Delete remote branch:
 
   ``git branch -rd branch-name``
+
+- List local and remote branches:
+
+  ``git branch -a``
+
+
+- Push a new branch to it's upstream:
+  
+  ``git push --set-upstream origin branch_name``
 
 
 - List git remote repos name | url:
