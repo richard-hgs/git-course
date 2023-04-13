@@ -23,7 +23,7 @@
 
 <img alt="git_logo" src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" width="100" height="100">
 
-- Creates a local repository in current cli context folder:
+- Create a local repository in current cli context folder:
 
   ``git init``
 
