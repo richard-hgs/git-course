@@ -141,7 +141,7 @@
 
 - Add new git remote po name | url:
 
-  ``git remote --add origin https://github.com/user-name/repo-name.git``
+  ``git remote add origin https://github.com/user-name/repo-name.git``
 
 
 - Switch branch to (Rollback / Forward) changes to a specific commit(using commit hash) in git log:
