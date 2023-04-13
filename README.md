@@ -3,7 +3,7 @@
 ### GitHub Commands:
 <img alt="github_logo" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" width="100" height="100">
 
-- Creates a online repository:
+- Create a online repository:
 
   ``gh repo create``<br/>
   - **E.g:**
