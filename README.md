@@ -159,6 +159,11 @@
   ``git checkout -b main``
 
 
+- Switch to a existing branch and move uncommited changes to the branch:
+
+  ``git switch -c new-branch``
+
+
 - Save old commits in a new branch before Overwriting:
 
   ``git checkout main``
